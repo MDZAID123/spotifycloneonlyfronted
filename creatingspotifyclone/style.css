@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+    /* random colors to check how it is 
+    this element is position in  the given way or not 
+    //note if you are using more than one fonts then
+    try to import them sare font ek 
+    import statement se kar lo
+
+     */
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+
+
+}
+nav ul li{
+    padding: 0 12px;
+}
+/* how you are targetting css of diff elements of webpage
+ */
+ .brand img{
+     width: 45px;
+     padding: 0 8px;
+     /* note we need padding only in left 
+     and write for this  */
+
+
+ }
+ .brand{
+     display: flex;
+     align-items: center;
+     font-weight: bolder;
+     font-size: 1.3rem;
+
+ }
+ .container{
+     min-height: 72vh;
+     background-color: black;
+     color: white;
+     display: flex;
+     font-family: 'Varela Round', sans-serif;
+     margin: 23px auto;
+     width: 70%;
+     border-radius: 12px;
+     padding: 34px;
+     background-image: url('bg.jpg');
+     background-size: 100vw 100vh;
+     
+
+
+
+     /* first try with arbitary css values then inspect it in console
+      */
+
+ }
+ .bottom{
+     position: sticky;
+     height: 130px;
+     background-color: black;
+     bottom: 0;
+     display: flex;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;'
+     
+
+ }
+ .icons{
+     margin-top: 15px;
+ }
+ .icons i{
+     cursor: pointer;
+ }
+ #myProgressBar{
+     width: 80vw;
+     text-align: center;
+     justify-content: center;
+     cursor: pointer;
+     /* we should be able to adjust it with mouse pointer  */
+
+ }
+
+
+ .songItemContainer{
+     margin-top: 74px;
+ }
+ .songItem{
+     height: 50px;
+     display: flex;
+     /* so that all content of this div should be displayed horizontallys
+      */
+      background-color: white;
+      /* width: 80%; */
+      color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+
+
+ }
+ .songItem img{
+     width: 23px ;
+     margin: 0 23px;
+    border-radius: 34px;
+
+
+ }
+ .timestamp{
+     margin: 0 23px;
+     
+ }
+ .timestamp i{
+     cursor: pointer;
+ }
+ .songInfo{
+     position: absolute;
+     left: 10vw;
+     font-family: 'Varela Round', sans-serif;
+ }
+ .songInfo img{
+     opacity: 0;
+     /* dosre elemente ke correspoding me kitna visible hona chahiye 
+      */
+    transition: opacity 0.4s ease-in;
+ }
